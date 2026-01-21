@@ -202,6 +202,114 @@ article ol li span {
   /* margin-top: 0.5rem; */
 }
 
+footer {
+  border-top: 1px solid #1e293b;
+  padding: 3rem 2rem;
+
+}
+
+footer .title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer .title span {
+  font-size: 1.2rem;
+  transform: rotate(40deg);
+  /* display: inline; */
+}
+
+footer .title p {
+  color: #94a3b8;
+  font-family: "JetBrains Mono";
+  font-size: 1.125rem;
+  display: inline;
+}
+
+.attachment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.attachment-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #27272A;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #030304;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+
+.attachment-card:hover {
+  border-color: #52525b;
+  background-color: #09090b;
+}
+
+.attachment-card .icon-box {
+  background-color: #0c1429;
+  color: #60A5FA;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+}
+
+.icon-box.mail {
+  background-color: #0c1429;
+  color: #60A5FA;
+}
+
+.icon-box.feed {
+  background-color: #06160C;
+  color: #4ADE80;
+}
+
+.icon-box.doc {
+  background-color: #160822;
+  color: #C084FC;
+}
+
+.icon-box svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.attachment-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.attachment-card h3 {
+  color: #ffffff;
+  font-family: "JetBrains Mono";
+  font-weight: 600;
+  font-size: 1.125rem;
+  white-space: nowrap;
+}
+
+.attachment-card:hover h3 {
+  text-decoration: underline;
+}
+
+.attachment-info span {
+  color: #71717A;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+
+
 @media (max-width: 425px) {
   .topnav {
     padding: 0.5rem 1rem;
